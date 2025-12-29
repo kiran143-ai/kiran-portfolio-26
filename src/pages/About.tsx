@@ -7,7 +7,7 @@ import companyEons from "@/assets/company-eons.png";
 
 const experiences = [
   {
-    role: "Product Designer - 1",
+    role: "Lead Product Designer - 1",
     company: "Trianz",
     period: "2017 - Present",
     logo: companyTrianz,
