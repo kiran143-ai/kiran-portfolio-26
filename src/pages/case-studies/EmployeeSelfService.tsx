@@ -4,6 +4,11 @@ import SectionHeading from "@/components/case-study/SectionHeading";
 import CheckItem from "@/components/case-study/CheckItem";
 import { getAdjacentStudies } from "@/lib/caseStudyData";
 import caseStudy4 from "@/assets/case-study-4.png";
+import ESSResearch from "@/assets/ESS_Research.png";
+import ESSWireframe from "@/assets/ESS_Wireframe.png";
+import EssVisualDesign from "@/assets/Ess_VisualDesign.png";
+
+
 
 const EmployeeSelfService = () => {
   const { prev, next } = getAdjacentStudies("employee-self-service");
@@ -121,7 +126,7 @@ const EmployeeSelfService = () => {
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <img src={caseStudy4} alt="Employee Self Service App" className="rounded-xl shadow-lg" />
+            <img src={ESSResearch} alt="Employee Self Service App" className="rounded-xl shadow-lg" />
             <div>
               <SectionHeading>Research (Qualitative)</SectionHeading>
               <p className="text-muted-foreground mb-6">Objectives of research:</p>
@@ -178,7 +183,12 @@ const EmployeeSelfService = () => {
                 <span><strong>Submit Request:</strong> User confirms and submits request for approval</span>
               </li>
             </ol>
+            <br /> 
+          
+                      <img src={ESSWireframe} alt="Employee Self Service App" className="rounded-xl shadow-lg" />
+
           </div>
+
         </div>
       </section>
 
@@ -187,21 +197,10 @@ const EmployeeSelfService = () => {
         <div className="container mx-auto px-6 text-center">
           <SectionHeading>Visual Designs</SectionHeading>
           <div className="flex justify-center gap-8 flex-wrap">
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Login Screen</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Home Dashboard</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Leave Request</p>
-              </div>
-            </div>
+                                    <img src={EssVisualDesign} alt="Employee Self Service App" className="rounded-xl shadow-lg" />
+
+            
+            
           </div>
         </div>
       </section>
