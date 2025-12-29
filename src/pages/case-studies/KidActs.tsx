@@ -3,7 +3,12 @@ import CaseStudyNav from "@/components/case-study/CaseStudyNav";
 import SectionHeading from "@/components/case-study/SectionHeading";
 import CheckItem from "@/components/case-study/CheckItem";
 import { getAdjacentStudies } from "@/lib/caseStudyData";
-import caseStudy5 from "@/assets/case-study-5.png";
+import KidAct from "@/assets/KidActs.png";
+import KidAcResearch from "@/assets/KidAct_Research.png";
+import KidActVisuals from "@/assets/KidAct_Visuals.png";
+
+
+
 
 const KidActs = () => {
   const { prev, next } = getAdjacentStudies("kid-acts");
@@ -115,7 +120,7 @@ const KidActs = () => {
                 <CheckItem>Family involvement boosts task completion rates</CheckItem>
               </div>
             </div>
-            <img src={caseStudy5} alt="KidActs App" className="rounded-xl shadow-lg" />
+            <img src={KidAcResearch} alt="KidActs App" className="rounded-xl shadow-lg" />
           </div>
         </div>
       </section>
@@ -172,26 +177,94 @@ const KidActs = () => {
       {/* Visual Designs */}
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
-          <SectionHeading>Visual Designs</SectionHeading>
+          <SectionHeading> Behind The Story </SectionHeading>
           <div className="flex justify-center gap-8 flex-wrap">
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Mission Dashboard</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Rewards Store</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl p-4 w-64">
-              <div className="bg-primary/10 rounded-xl h-96 flex items-center justify-center">
-                <p className="text-muted-foreground">Achievement Badges</p>
-              </div>
-            </div>
+                      <img src={KidAct} alt="KidActs App" className="rounded-xl shadow-lg" />
+
           </div>
         </div>
       </section>
+
+
+<section className="py-16">
+  <div className="container mx-auto px-6">
+    <SectionHeading>Usability Study on Early Concept Designs
+</SectionHeading>
+
+    {/* Design Principles */}
+    
+
+    {/* Usability Study */}
+    <div className="bg-card rounded-xl p-8 mb-12">
+    
+
+      <p className="text-muted-foreground mb-8">
+        This usability study was conducted on early concept designs to validate
+        task flows and understand how parents and kids interact with the
+        application. The product was a conceptual prototype and not a fully
+        functional application.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Parent Tasks */}
+        <div>
+          <h5 className="font-semibold text-foreground mb-4">Parent Tasks</h5>
+          <ul className="space-y-3 text-muted-foreground">
+            <li>• Register and add family members</li>
+            <li>• Assign chores after adding the family</li>
+            <li>• Observe insights and status on the home page</li>
+            <li>• Approve completed chores submitted by kids</li>
+            <li>• Approve or manage rewards claimed by kids</li>
+          </ul>
+        </div>
+
+        {/* Kid Tasks */}
+        <div>
+          <h5 className="font-semibold text-foreground mb-4">Kid Tasks</h5>
+          <ul className="space-y-3 text-muted-foreground">
+            <li>• View chores assigned by parents</li>
+            <li>• Complete chores and upload proof</li>
+            <li>• Claim rewards after task completion</li>
+            <li>• View notifications and updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* Follow-up & Observation */}
+    <div className="bg-secondary/30 rounded-xl p-8 mb-12">
+      <h4 className="font-semibold text-foreground mb-6">
+        Follow-up & Observations
+      </h4>
+
+      <ul className="space-y-4 text-muted-foreground">
+        <li>
+          • Evaluated whether users found the tasks easy or difficult and noted
+          areas for improvement
+        </li>
+        <li>
+          • Assessed navigation clarity and overall user-friendliness
+        </li>
+        <li>
+          • Observed time spent on each task to identify friction points
+        </li>
+      </ul>
+    </div>
+
+    
+  </div>
+</section>
+
+ <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-6 text-center">
+          <SectionHeading> Usability Improvements: From Early Concepts to Final Visual Design </SectionHeading>
+          <div className="flex justify-center gap-8 flex-wrap">
+                      <img src={KidActVisuals} alt="KidActs App" className="rounded-xl shadow-lg" />
+
+          </div>
+        </div>
+      </section>
+
 
       {/* Business Impact */}
       <section className="py-16">
