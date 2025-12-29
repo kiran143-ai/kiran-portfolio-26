@@ -153,52 +153,82 @@ const HealthcareReports = () => {
         </div>
       </section>
 
-      {/* ================= JOURNEY ================= */}
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <SectionHeading>
-            Created current User Journey Map based on research
-          </SectionHeading>
+      
+      
+{/* ================= JOURNEY ================= */}
 
-          <p className="text-muted-foreground max-w-3xl mt-6 mb-12">
-            We mapped the end-to-end journey from login to report export,
+ <section className="py-24">
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          <div>
+            <SectionHeading>Created current User Journey Map based on research</SectionHeading>
+
+            <p className="text-muted-foreground mb-6 mt-4">
+              We mapped the end-to-end journey from login to report export,
             uncovering friction points in data discovery, filtering, and
             interpretation.
-          </p>
+            </p>
 
-          <img src={Journeymap} alt="User journey map" className="rounded-xl" />
+            <div className="space-y-4">
+              <CheckItem>
+                Adding widgets through popup makes confuse the user to predict the dashboard view.
+              </CheckItem>
+              <CheckItem>
+                User can’t add the multiple widgets at time
+              </CheckItem>
+              <CheckItem>
+                There are no features for templates and theme while creating dashboard
+              </CheckItem>
+             
+            </div>
+          </div>
+                   <img src={Journeymap} alt="User journey map" className="rounded-xl" />
+
         </div>
       </section>
 
-      {/* ================= IDEATION ================= */}
-      <section className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-6">
-          <SectionHeading>Ideation – Dashboard Builder Wireframes</SectionHeading>
 
-          <p className="text-muted-foreground max-w-3xl mt-6 mb-12">
-            Multiple dashboard layouts were explored to balance flexibility
+
+      {/* ================= IDEATION ================= */}
+    
+       <section className="py-24 bg-secondary/30">
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                <img src={Ideation} alt="Ideation wireframes" className="rounded-xl" />
+
+          <div>
+            <SectionHeading>Ideation – Dashboard Builder Wireframes</SectionHeading>
+
+            <p className="text-muted-foreground mb-6 mt-4">
+              Multiple dashboard layouts were explored to balance flexibility
             with usability. The focus was on quick customization without
             overwhelming users.
-          </p>
+            </p>
+          </div>
 
-          <img src={Ideation} alt="Ideation wireframes" className="rounded-xl" />
         </div>
       </section>
 
       {/* ================= DESIGN SYSTEM ================= */}
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <SectionHeading>Design System</SectionHeading>
+  
 
-          <p className="text-muted-foreground max-w-3xl mt-6 mb-12">
-            A scalable design system was built with healthcare-appropriate
+
+ <section className="py-24">
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          <div>
+            <SectionHeading>Design System</SectionHeading>
+
+            <p className="text-muted-foreground mb-6 mt-4">
+              A scalable design system was built with healthcare-appropriate
             colors, accessible typography, and reusable components optimized
             for data-heavy interfaces.
-          </p>
-
+            </p>
+          </div>
           <img src={DesignSystem} alt="Design system" className="rounded-xl" />
+
         </div>
       </section>
+
 
       {/* ================= VISUAL ================= */}
       <section className="py-24 bg-secondary/30">
