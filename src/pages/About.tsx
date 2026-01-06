@@ -4,6 +4,8 @@ import aboutAvatar from "@/assets/about-avatar.png";
 import companyTrianz from "@/assets/company-trianz.png";
 import companyValuelabs from "@/assets/company-valuelabs.png";
 import companyEons from "@/assets/company-eons.png";
+import { motion } from "framer-motion";
+
 
 const experiences = [
   {
@@ -51,16 +53,31 @@ const About = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed font-light">
-              I'm passionate about solving customer problems by combining thoughtful research, clever technology and beautiful design — and love working with businesses who believe that design can change the world.
-            </p>
-            <div className="flex justify-center lg:justify-end">
-              <img
-                src={aboutAvatar}
-                alt="Kiran Yelligeti"
-                className="w-48 md:w-64 h-auto rounded-full"
-              />
-            </div>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-3xl font-bold text-foreground max-w-3xl leading-tight">
+              I'm passionate about solving customer problems by combining thoughtful research, clever technology and beautiful design and love working with businesses who believe that design can change the world.
+            </h1>
+<div className="flex justify-center lg:justify-end">
+  <motion.img
+    src={aboutAvatar}
+    alt="Kiran Yelligeti"
+    initial={{ opacity: 0, x: 40 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{
+      duration: 0.8,
+      ease: "easeOut",
+    }}
+    className="
+      w-full
+      max-w-md
+      md:max-w-lg
+      lg:max-w-xl
+      h-auto
+      object-contain
+    "
+  />
+</div>
+
+
           </div>
         </div>
       </section>
