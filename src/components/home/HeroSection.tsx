@@ -31,9 +31,10 @@ const HeroSection = () => {
   }, []);
 
  return (
-  <section className="relative py-12 md:py-20 overflow-hidden">
-    {/* 🌈 LIGHT RAYS BACKGROUND (does NOT affect layout) */}
-    <div className="absolute inset-0 pointer-events-none z-0">
+  <section className="relative py-12 md:py-20 overflow-hidden min-h-[600px]">
+
+    {/* LIGHT RAYS BACKGROUND */}
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <LightRays
         raysOrigin="top-center"
         raysColor="#ffffff"
@@ -44,14 +45,14 @@ const HeroSection = () => {
         mouseInfluence={0.1}
         noiseAmount={0}
         distortion={0}
-        className="custom-rays"
         pulsating={false}
         fadeDistance={1}
         saturation={1}
+        className="custom-rays"
       />
     </div>
 
-    {/* 🧱 HERO CONTENT */}
+    {/* HERO CONTENT */}
     <div className="relative z-10 container mx-auto px-6">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -69,16 +70,15 @@ const HeroSection = () => {
             ))}
           </h1>
 
-          <p className="text-primary text-lg md:text-xl mb-6 animate-fade-up">
+          <p className="text-primary text-lg md:text-xl mb-6">
             15+ Years Experience – Crafting Smarter Experiences with AI Driven Design
           </p>
 
-          <p className="text-muted-foreground leading-relaxed max-w-lg animate-fade-up delay-200">
+          <p className="text-muted-foreground leading-relaxed max-w-lg">
             Passionate about crafting meaningful and user-centric experiences.
-            I blend empathy, creativity, and collaboration to solve complex
-            problems.{" "}
+            I blend empathy, creativity, and collaboration to solve complex problems.
             <span className="text-foreground font-medium">
-              AI tools help me design faster, smarter, and more personalized experiences.
+              {" "}AI tools help me design faster, smarter, and more personalized experiences.
             </span>
           </p>
         </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
               ref={imageRef}
               src={heroImage}
               alt="Product Designer"
-              className="w-80 md:w-96 lg:w-[32rem] xl:w-[36rem] rounded-2xl object-cover transition-transform duration-300 ease-out will-change-transform"
+              className="w-80 md:w-96 lg:w-[32rem] xl:w-[36rem] rounded-2xl object-cover"
             />
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl -z-10 blur-xl" />
           </div>
@@ -98,8 +98,10 @@ const HeroSection = () => {
 
       </div>
     </div>
+
   </section>
 );
+
 
 };
 
