@@ -70,20 +70,27 @@ const HeroSection = () => {
             ))}
           </h1>
 
-          <p className="text-primary text-lg md:text-xl mb-6">
-            15+ Years Experience – Crafting Smarter Experiences with AI Driven Design. Scalable Systems & Dev-Ready UI.
-          </p>
+          {/* 
+<p className="text-primary text-lg md:text-xl mb-6">
+  15+ Years Experience – Crafting Smarter Experiences with AI Driven Design. Scalable Systems & Dev-Ready UI.
+</p> 
+*/}
 
-          <p className="text-muted-foreground leading-relaxed max-w-3xl">
-            I lead product design initiatives that balance user experience, business goals, and technical feasibility. 
-            My work focuses on building accessible, reusable UI systems that scale across products.     <br />
-            With practical front-end fluency in HTML, CSS, Tailwind, JavaScript, and React, I collaborate deeply with
-             engineering teams to translate design systems into reliable, production-ready components.
+<p className="text-primary text-lg md:text-xl mb-6">
+  Crafting Smarter Experiences. Scalable Systems & Dev-Ready UI.
+</p>
 
-            <span className="text-foreground font-medium">
-              {" "}AI tools help me design faster, smarter, and more personalized experiences.
-            </span>
-          </p>
+<p className="text-muted-foreground leading-relaxed max-w-3xl">
+  I lead product design initiatives that balance user experience, business goals, and technical feasibility. 
+  My work focuses on building accessible, reusable UI systems that scale across products.
+  <br /><br />
+  With practical front-end fluency in HTML, CSS, Tailwind, JavaScript, and React, I collaborate deeply with
+  engineering teams to translate design systems into reliable, production-ready components.
+  <br /><br />
+  <span className="text-foreground font-medium">
+    I strategically integrate AI into my workflow to accelerate research, exploration, and iteration while ensuring product thinking and user value remain human-led.
+  </span>
+</p>
         </div>
 
         {/* RIGHT IMAGE */}
