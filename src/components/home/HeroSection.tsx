@@ -3,7 +3,7 @@ import heroImage from "@/assets/designer-hero.png";
 import LightRays from "@/effects/LightRays";
 
 
-const title = "Product Designer";
+const title = "Product Design Leader";
 
 const HeroSection = () => {
   const imageRef = useRef(null);
@@ -58,7 +58,7 @@ const HeroSection = () => {
 
         {/* LEFT */}
         <div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-4 flex flex-wrap">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-6xl font-bold mb-4 flex flex-wrap">
             {title.split("").map((char, i) => (
               <span
                 key={i}
@@ -71,12 +71,15 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-primary text-lg md:text-xl mb-6">
-            15+ Years Experience – Crafting Smarter Experiences with AI Driven Design
+            15+ Years Experience – Crafting Smarter Experiences with AI Driven Design. Scalable Systems & Dev-Ready UI.
           </p>
 
-          <p className="text-muted-foreground leading-relaxed max-w-lg">
-            Passionate about crafting meaningful and user-centric experiences.
-            I blend empathy, creativity, and collaboration to solve complex problems.
+          <p className="text-muted-foreground leading-relaxed max-w-3xl">
+            I lead product design initiatives that balance user experience, business goals, and technical feasibility. 
+            My work focuses on building accessible, reusable UI systems that scale across products.     <br />
+            With practical front-end fluency in HTML, CSS, Tailwind, JavaScript, and React, I collaborate deeply with
+             engineering teams to translate design systems into reliable, production-ready components.
+
             <span className="text-foreground font-medium">
               {" "}AI tools help me design faster, smarter, and more personalized experiences.
             </span>
