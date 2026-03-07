@@ -76,8 +76,8 @@ const HeroSection = () => {
 </p> 
 */}
 
-<p className="text-primary text-lg md:text-xl mb-6">
-  Crafting Smarter Experiences. Scalable Systems & Dev-Ready UI.
+<p className="text-primary text-lg md:text-ml mb-6">
+   UX Strategy | Design Systems | AI-Enabled Workflows |  Dev-Ready UI
 </p>
 
 <p className="text-muted-foreground leading-relaxed max-w-3xl">
