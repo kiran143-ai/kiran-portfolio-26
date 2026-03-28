@@ -12,11 +12,17 @@ export const caseStudyList = [
     shortTitle: "SaaS UX Solutions",
   },
   {
-    slug: "healthcare-reports",
+    slug: "dumpster-driver-tablet",
     number: "03",
-    title: "Leading Health care Reports",
-    shortTitle: "Leading Healthcare Reports",
+    title: "Dumpster Driver Tablet Application",
+    shortTitle: "Driver Tablet App",
   },
+  // {
+  //   slug: "healthcare-reports",
+  //   number: "03",
+  //   title: "Leading Health care Reports",
+  //   shortTitle: "Leading Healthcare Reports",
+  // },
   {
     slug: "employee-self-service",
     number: "04",

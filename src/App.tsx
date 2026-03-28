@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import InsuranceCompany from "./pages/case-studies/InsuranceCompany";
 import SaasUxSolutions from "./pages/case-studies/SaasUxSolutions";
 import HealthcareReports from "./pages/case-studies/HealthcareReports";
+import DumpsterDriverTablet from "./pages/case-studies/DumpsterDriverTablet";
 import EmployeeSelfService from "./pages/case-studies/EmployeeSelfService";
 import KidActs from "./pages/case-studies/KidActs";
 
@@ -38,6 +39,7 @@ function App() {
             <Route path="/case-study/insurance-company" element={<InsuranceCompany />} />
             <Route path="/case-study/saas-ux-solutions" element={<SaasUxSolutions />} />
             <Route path="/case-study/healthcare-reports" element={<HealthcareReports />} />
+            <Route path="/case-study/dumpster-driver-tablet" element={<DumpsterDriverTablet />} />
             <Route path="/case-study/employee-self-service" element={<EmployeeSelfService />} />
             <Route path="/case-study/kid-acts" element={<KidActs />} />
 

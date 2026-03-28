@@ -3,9 +3,10 @@ import Layout from "@/components/layout/Layout";
 import { AlertTriangle } from "lucide-react";
 import caseStudy1 from "@/assets/case-study-1.png";
 import caseStudy2 from "@/assets/case-study-2.png";
-import caseStudy3 from "@/assets/case-study-3.png";
+// import caseStudy3 from "@/assets/case-study-3.png"; // Healthcare Reports - temporarily replaced
 import caseStudy4 from "@/assets/case-study-4.png";
 import caseStudy5 from "@/assets/case-study-5.png";
+import driverTabletTile from "@/assets/DriverTablet-tile.png";
 
 const caseStudies = [
   {
@@ -26,12 +27,20 @@ const caseStudies = [
   },
   {
     number: "03",
-    title: "Leading Health care Reports",
-    description: "Comprehensive web application for unlocking valuable insights within healthcare reports.",
-    image: caseStudy3,
+    title: "Dumpster Driver Tablet Application",
+    description: "A tablet application designed to help drivers efficiently manage dumpster deliveries, pickups, and route navigation with real-time job updates.",
+    image: driverTabletTile,
     imagePosition: "left",
-    slug: "healthcare-reports",
+    slug: "dumpster-driver-tablet",
   },
+  // {
+  //   number: "03",
+  //   title: "Leading Health care Reports",
+  //   description: "Comprehensive web application for unlocking valuable insights within healthcare reports.",
+  //   image: caseStudy3,
+  //   imagePosition: "left",
+  //   slug: "healthcare-reports",
+  // },
   {
     number: "04",
     title: "Employee Self Service",
